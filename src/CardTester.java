@@ -9,9 +9,10 @@ public class CardTester {
 	 */
 	public static void main(String[] args) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-		Card a = new Card("Three", "Hearts", 100)
-		Card b = new Card("Three", "Hearts", 100)
-		Card c = new Card("Five", "Spades", 500)
-		System.out.println(a.toString());
+		Card a = new Card("Three", "Hearts", 100);
+		Card b = new Card("Three", "Hearts", 100);
+		Card c = new Card("Five", "Spades", 500);
+		System.out.println(a.toString() + "\n" + b.toString() + "\n" + c.toString());
+		System.out.println(a.matches(b) + "\n" + b.matches(c) + "\n" + c.matches(a));
 	}
 }

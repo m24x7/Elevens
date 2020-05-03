@@ -1,6 +1,7 @@
 /**
  * This class provides a convenient way to test shuffling methods.
  */
+import java.util.Random;
 public class Shuffler {
 
 	/**
@@ -51,6 +52,24 @@ public class Shuffler {
 	 */
 	public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		int[] shuffle = new int[values.length];
+		int k = 0;
+		for (int j = 0; j < (values.length + 1) / 2; j ++)
+		{
+			shuffle[k] = values[j];
+			k += 2;
+		}
+		k = 1;
+		for (int j = (values.length + 1) / 2; j < values.length; j++)
+		{
+			shuffle[k] = values[j];
+			k += 2;			
+		}
+		for ( int g = 0; g < values.length; g++)
+		{
+			values[g] = shuffle[g];
+		}
+
 	}
 
 	/**
@@ -66,5 +85,15 @@ public class Shuffler {
 	 */
 	public static void selectionShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		Random rand = new Random();
+		for (int i = values.length-1; i > 0; i--)
+		{
+			int k = rand.nextInt(values.length);
+			int temp;
+			temp = values[i];
+			values[i] = values[k];
+			values[k] = temp;
+
+		}
 	}
 }

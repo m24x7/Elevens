@@ -5,3 +5,4 @@ Possible error: constructor doesn't create a new card with the given strings and
 Buggy3)
 Possible error: testshuffle method uses .deal which returns size not a card causing both cards to be the same number.
 Buggy4)
+Possible error: .deal causes the one card deck to have zero cards thus returning null when the size is tested.

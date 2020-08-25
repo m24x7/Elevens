@@ -5,3 +5,16 @@ Step three: set the board
 Step four: Match and remove cards, replace removed cards
 Step five: restart
 Q3)Yes, the code contains all the state and behavior it needs to play a game, some of it has yet to be coded.
+Q4)
+a)dealMyCards is called in the constroctor and the newGame method
+b)isLegal
+c)j(hearts), 6(clubs), 2(spades), A(spades), 4(hearts)
+d)public static printCards(ElevensBoard board) 
+{    
+    List<Integer> cIndexes = board.cardIndexes(); 
+    /* Your code goes here. */ 
+    for (int k = 0; k < selected.size(); k++)
+    {
+        
+    }
+}
